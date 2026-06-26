@@ -4,4 +4,4 @@ on: pull_request
 
 jobs:
   compile-c-code:
-    uses: ./.github/.workflows/c-cpp.yml@main
+    uses: ./.github/workflows/c-cpp.yml
