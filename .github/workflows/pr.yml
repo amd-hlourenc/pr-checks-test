@@ -1,13 +1,13 @@
 name: "PR Checks Workflow"
 
-on: [push, pull_request]
+on: pull_request
 
 jobs:
   dummy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
       - name: Run dummy step
         run: echo "This is a dummy step."
   # if: ${{ false }}
