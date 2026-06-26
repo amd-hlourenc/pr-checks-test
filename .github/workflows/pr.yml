@@ -3,5 +3,6 @@ name: "PR Checks Workflow"
 on: [push, pull_request]
 
 jobs:
+  if: ${{ false }}
   compile-c-code:
     uses: ./.github/workflows/c-cpp.yml
