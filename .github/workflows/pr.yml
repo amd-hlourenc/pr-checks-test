@@ -10,6 +10,6 @@ jobs:
         uses: actions/checkout@v6
       - name: Run dummy step
         run: echo "This is a dummy step."
-  if: ${{ false }}
   compile-c-code:
+    if: ${{ false }}
     uses: ./.github/workflows/c-cpp.yml
