@@ -1,0 +1,7 @@
+name: "PR Checks Workflow"
+
+on: pull_request
+
+jobs:
+  compile-c-code:
+    uses: ./.github/.workflows/c-cpp.yml@main
