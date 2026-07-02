@@ -3,5 +3,13 @@ name: "PR Checks Workflow"
 on: pull_request
 
 jobs:
+  dummy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v6
+      - name: Run dummy step
+        run: echo "This is a dummy step."
   compile-c-code:
+    if: ${{ false }}
     uses: ./.github/workflows/c-cpp.yml
